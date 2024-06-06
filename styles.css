@@ -6,10 +6,11 @@ body {
 }
 
 main {
-  background-image: url(images/bg.jpg);
-  background-size: cover;
-  width: auto;
-  height: 100vh;
+  /* background-image: url(images/bg.jpg); */
+  /* background-size: cover; */
+  background-color: #4f6464;
+  width: 100vw;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +24,6 @@ header {
 }
 
 .title {
-  font-size: 2.3rem;
   text-shadow: rgb(160, 160, 160) 1px 0 10px;
 }
 
@@ -35,7 +35,22 @@ header {
 
 /* form section */
 .container {
+  background-color: rgb(45, 57, 57, 0.85);
+  box-shadow: 0 4px 8px 0 rgba(186, 186, 186, 0.2), 0 6px 20px 0 rgba(181, 181, 181, 0.19);
   margin: auto;
-  width: 40vw;
+  width: 35vw;
   min-height: 700px;
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

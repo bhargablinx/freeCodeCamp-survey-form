@@ -9,11 +9,124 @@
   <body>
     <main>
       <header>
-        <div class="title">freeCodeCamp Survey Form</div>
-        <div class="description">Thank you for taking the time to help us improve the platform</div>
+        <h1 class="title">freeCodeCamp Survey Form</h1>
+        <div class="description">
+          Thank you for taking the time to help us improve the platform
+        </div>
       </header>
       <div class="container">
-
+        <form action="" class="survey-form">
+          <div class="row">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="row">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emai" />
+          </div>
+          <div class="row">
+            <label for="age">Age (optional)</label>
+            <input type="number" name="age" id="age" />
+          </div>
+          <div class="row">
+            <label for="job"
+              >Which option best describes your current role?</label
+            >
+            <select name="role" id="job">
+              <option selected disabled>Select current role</option>
+              <option value="student">Student</option>
+              <option value="full-job">Full Time Job</option>
+              <option value="full-learner">Full Time Learner</option>
+              <option value="not-say">Prefer Not Say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="recommendStatus"
+              >Would you recommend freeCodeCamp to a friend?</label
+            >
+            <div class="radio-row">
+              <input type="radio" name="recommendStatus" id="sure" />
+              <label for="sure">Definitely</label>
+            </div>
+            <div class="radio-row">
+              <input type="radio" name="recommendStatus" id="maybe" />
+              <label for="maybe">Maybe</label>
+            </div>
+            <div class="radio-row">
+              <input type="radio" name="recommendStatus" id="not-sure" />
+              <label for="not-sure">Not sure</label>
+            </div>
+          </div>
+          <div class="row">
+            <label for="favorite"
+              >Which option best describes your current role?</label
+            >
+            <select name="fav-feature" id="fav">
+              <option selected disabled>Select an option</option>
+              <option value="challenge">Challenge</option>
+              <option value="project">Project</option>
+              <option value="community">Community</option>
+              <option value="open-source">Open source</option>
+            </select>
+          </div>
+          <div class="row">
+            <label for="improve">
+              What would you like to see improved? (Check all that apply)
+            </label>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="fproject" />
+              <label for="fproject">Front-end Projects</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="bproject" />
+              <label for="bproject">Back-end Projects</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="data-viz" />
+              <label for="data-viz">Data Visualization</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="challenge" />
+              <label for="challenge">Challenge</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="open-community" />
+              <label for="open-community">Open Source Community</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="room" />
+              <label for="room">Gitter Help  Rooms</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="video" />
+              <label for="video">Videos</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="meetup" />
+              <label for="meetup">City Meetup</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="wiki" />
+              <label for="wiki">Wiki</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="forum" />
+              <label for="forum">Forum</label>
+            </div>
+            <div class="radio-row">
+              <input type="checkbox" name="recommendStatus" id="a-course" />
+              <label for="a-course">Additional Course</label>
+            </div>
+          </div>
+          <div class="row">
+            <label for="comment">Any comments or suggestions?</label>
+            <textarea name="comment" id="comment" rows="5"></textarea>
+          </div>
+          <div class="row">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
       </div>
     </main>
   </body>
