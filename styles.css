@@ -3,6 +3,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   color: white;
+  font-size: 1rem;
 }
 
 main {
@@ -53,4 +54,36 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 10px;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #04aeae;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+input {
+  border-radius: 2px;
+  border: none;
+  padding: 2px;
+  font-size: 1rem;
+  color: rgb(88, 88, 88);
+}
+
+select {
+  font-size: 1rem;
+  color: rgb(88, 88, 88);
+}
+
+.field {
+  height: 2rem;
+}
+
+textarea {
+  font-size: 1rem;
 }

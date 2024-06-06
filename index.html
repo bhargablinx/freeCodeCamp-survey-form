@@ -11,28 +11,28 @@
       <header>
         <h1 class="title">freeCodeCamp Survey Form</h1>
         <div class="description">
-          Thank you for taking the time to help us improve the platform
+          <p>Thank you for taking the time to help us improve the platform</p>
         </div>
       </header>
       <div class="container">
         <form action="" class="survey-form">
           <div class="row">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <label for="name-label">Name</label>
+            <input class="field" type="text" name="name" id="name-label" placeholder="Enter your name" required/>
           </div>
           <div class="row">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="emai" />
+            <label for="email-label">Email</label>
+            <input class="field" type="email" name="email" id="email-label" placeholder="Enter you email" required/>
           </div>
           <div class="row">
-            <label for="age">Age (optional)</label>
-            <input type="number" name="age" id="age" />
+            <label for="number-label">Age (optional)</label>
+            <input class="field" type="number" name="age" id="number-label" placeholder="Age" min="1" max="200"/>
           </div>
           <div class="row">
             <label for="job"
               >Which option best describes your current role?</label
             >
-            <select name="role" id="job">
+            <select class="field" name="role" id="dropdown" required="">
               <option selected disabled>Select current role</option>
               <option value="student">Student</option>
               <option value="full-job">Full Time Job</option>
@@ -46,15 +46,15 @@
               >Would you recommend freeCodeCamp to a friend?</label
             >
             <div class="radio-row">
-              <input type="radio" name="recommendStatus" id="sure" />
+              <input type="radio" name="recommendStatus" id="sure" value="sure"/>
               <label for="sure">Definitely</label>
             </div>
             <div class="radio-row">
-              <input type="radio" name="recommendStatus" id="maybe" />
+              <input type="radio" name="recommendStatus" id="maybe" value="maybe"/>
               <label for="maybe">Maybe</label>
             </div>
             <div class="radio-row">
-              <input type="radio" name="recommendStatus" id="not-sure" />
+              <input type="radio" name="recommendStatus" id="not-sure" value="not-sure"/>
               <label for="not-sure">Not sure</label>
             </div>
           </div>
@@ -62,7 +62,7 @@
             <label for="favorite"
               >Which option best describes your current role?</label
             >
-            <select name="fav-feature" id="fav">
+            <select class="field" name="fav-feature" id="fav">
               <option selected disabled>Select an option</option>
               <option value="challenge">Challenge</option>
               <option value="project">Project</option>
@@ -121,7 +121,7 @@
           </div>
           <div class="row">
             <label for="comment">Any comments or suggestions?</label>
-            <textarea name="comment" id="comment" rows="5"></textarea>
+            <textarea name="comment" id="comment" rows="5" placeholder="Enter your comment here..."></textarea>
           </div>
           <div class="row">
             <button type="submit">Submit</button>
